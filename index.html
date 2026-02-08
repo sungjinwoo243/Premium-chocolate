@@ -1,6 +1,222 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    Hello Netlify
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Noir Luxe - Premium Artisan Chocolate. Experience the elegance of fine craftsmanship.">
+    <title>Noir Luxe | Premium Artisan Chocolate</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon placeholder (in real scenario, we'd add one) -->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Noir Luxe</a>
+            <ul class="nav-links">
+                <li><a href="#about">Our Craft</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn-nav">Shop Now</a></li>
+                <!-- Theme Toggle -->
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5" />
+                            <path d="M12 1v2" />
+                            <path d="M12 21v2" />
+                            <path d="M4.22 4.22l1.42 1.42" />
+                            <path d="M18.36 18.36l1.42 1.42" />
+                            <path d="M1 12h2" />
+                            <path d="M21 12h2" />
+                            <path d="M4.22 19.78l1.42-1.42" />
+                            <path d="M18.36 5.64l1.42-1.42" />
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="fade-in">Indulge in Exquisite <br> <span class="text-gold">Artistry</span></h1>
+            <p class="fade-in delay-1">Handcrafted with passion, sourced with integrity. Experience the deepest flavors
+                of Noir Luxe.</p>
+            <div class="hero-cta fade-in delay-2">
+                <a href="#collection" class="btn btn-primary">Discover the Collection</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+
+    <!-- Premium Showcase Section -->
+    <section id="about" class="section premium-showcase">
+        <div class="sticky-container">
+            <canvas id="premium-canvas"></canvas>
+            <div class="premium-overlay fade-up">
+                <h2>Experience the <span class="text-gold">Ultimate Standard</span></h2>
+                <p>A cinematic journey through our chocolate making process.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features / Craftsmanship Section (Restored & Enhanced) -->
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title text-center">Why <span class="text-gold">Noir Luxe?</span></h2>
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 9c0 5 3 9 9 9s9-4 9-9-4-9-9-9-9 4-9 9" />
+                            <path d="M6 8s2.5-3 5-3c2 0 3.5 1.5 3.5 1.5" />
+                        </svg>
+                    </div>
+                    <h3>Ethically Sourced</h3>
+                    <p>We partner directly with farmers in Ecuador and Ghana to ensure fair wages and premium quality
+                        cacao beans. Transparency is our promise.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="m19.4 12.3-2.1-4.2a2 2 0 0 0-3.6 0l-2.1 4.2a2 2 0 0 0 0 1.8l2.1 4.2a2 2 0 0 0 3.6 0l2.1-4.2a2 2 0 0 0 0-1.8Z" />
+                            <path d="M12 3v18" />
+                        </svg>
+                    </div>
+                    <h3>Master Craftsmanship</h3>
+                    <p>Every bar is tempered and molded by hand in small batches to preserve distinct flavor notes and
+                        ensure a perfect snap.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>Only the finest natural ingredients. No artificial preservatives, just pure, decadent flavor that
+                        lingers on the palate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Preview (Optional extra touch for "luxury") -->
+    <section id="collection" class="section collection">
+        <div class="container">
+            <h2 class="section-title text-center">Signature <span class="text-gold">Collection</span></h2>
+            <div class="collection-grid">
+                <div class="collection-item fade-up">
+                    <img src="images/midnight_truffle.png" alt="Midnight Truffle" class="item-image">
+                    <div class="item-details">
+                        <h3>Midnight Truffle</h3>
+                        <p>85% Dark Chocolate</p>
+                    </div>
+                </div>
+                <div class="collection-item fade-up delay-1">
+                    <img src="images/gold_leaf_praline.png" alt="Gold Leaf Praline" class="item-image">
+                    <div class="item-details">
+                        <h3>Gold Leaf Praline</h3>
+                        <p>Hazelnut & Sea Salt</p>
+                    </div>
+                </div>
+                <div class="collection-item fade-up delay-2">
+                    <img src="images/velvet_raspberry.png" alt="Velvet Raspberry" class="item-image">
+                    <div class="item-details">
+                        <h3>Velvet Raspberry</h3>
+                        <p>Dark Chocolate Ganache</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Connoisseur <span class="text-gold">Reviews</span></h2>
+            <p class="text-center fade-in" style="margin-top: -30px; margin-bottom: 50px; font-style: italic;">Loved by
+                10,000+ Chocolate Lovers</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-card fade-up">
+                    <div class="stars" style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 20px;">
+                        ★★★★★</div>
+                    <p class="quote">"Noir Luxe has redefined chocolate for me. The texture is impossibly smooth, and
+                        the flavors are deep and complex. A true masterpiece."</p>
+                    <div class="author fade-in delay-1">- Julian V., Sommelier</div>
+                </div>
+                <div class="testimonial-card fade-up delay-1" style="margin-top: 50px;"> <!-- Added for variety -->
+                    <div class="stars" style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 20px;">
+                        ★★★★★</div>
+                    <p class="quote">"I gifted the Signature Collection to my wife for our anniversary. The presentation
+                        was stunning, and the taste was divine. Best chocolate I've ever bought."</p>
+                    <div class="author fade-in delay-2">- Marcus T., Verified Buyer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="section final-cta">
+        <div class="container text-center">
+            <h2 class="fade-up">Elevate Your Senses</h2>
+            <p class="fade-up delay-1">Join our exclusive mailing list for early access to limited edition releases.</p>
+            <form class="newsletter-form fade-up delay-2">
+                <input type="email" placeholder="Your Email Address" aria-label="Email Address">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">Noir Luxe</div>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Noir Luxe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
